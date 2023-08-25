@@ -8,7 +8,7 @@ provider:
         - dynamodb:PutItem
         - dynamodb:GetItem
         - dynamodb:Scan
-      Resource: "arn:aws:dynamodb:us-east-1:768824585434:table/Personajes" # Cambia esto al ARN de tu tabla
+      Resource: "arn:aws:dynamodb:us-east-1:768824585434:table/Personajes"
 functions:
   app:
     handler: dist/appHandler.appHandler
