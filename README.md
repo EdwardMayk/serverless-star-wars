@@ -34,7 +34,7 @@ This endpoint retrieves a list of Star Wars characters that have been stored in 
 Using AWS CLI: Run the following command and provide your AWS access key, secret key, default region, and output format:
 
    ```sh
-   npm install
+   aws configure
 
 2. Deploy the serverless application using:
    ```sh
