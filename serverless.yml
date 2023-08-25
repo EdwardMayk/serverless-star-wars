@@ -1,0 +1,26 @@
+service: api-star-wars
+provider:
+  name: aws
+  runtime: nodejs14.x
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - dynamodb:PutItem
+        - dynamodb:GetItem
+        - dynamodb:Scan
+      Resource: "arn:aws:dynamodb:us-east-1:768824585434:table/Personajes" # Cambia esto al ARN de tu tabla
+functions:
+  app:
+    handler: dist/appHandler.appHandler
+    events:
+      - http:
+          path: /api/personajes
+          method: get
+      - http:
+          path: /api/personajes
+          method: post
+      - http:
+          path: /api/personajes-almacenados
+          method: get
+plugins:
+  - serverless-offline
