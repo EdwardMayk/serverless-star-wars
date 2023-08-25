@@ -30,3 +30,27 @@ This endpoint retrieves a list of Star Wars characters that have been stored in 
 
    ```sh
    npm install
+3. Configure your AWS credentials using one of the following methods:
+Using AWS CLI: Run the following command and provide your AWS access key, secret key, default region, and output format:
+
+   ```sh
+   npm install
+
+2. Deploy the serverless application using:
+   ```sh
+   npm run deploy
+
+## Technologies Used
+
+- Serverless Framework
+- AWS Lambda
+- AWS API Gateway
+- AWS DynamoDB
+- AWS SDK for JavaScript
+- Express.js
+- Axios
+- TypeScript
+- Jest (for testing)
+
+
+
